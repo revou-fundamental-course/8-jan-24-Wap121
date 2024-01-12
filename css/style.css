@@ -1,0 +1,62 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    text-align: center;
+}
+
+header h1{
+    color:#EBE4D1;
+    background-color: #E55604;
+}
+
+header h4{
+    margin-top: 32px;
+    color: #E55604;
+}
+
+header p{
+    margin-top: 0px;
+    font-size: x-small;
+    color: #26577C;
+}
+
+.inputSection{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#squareSide{
+    margin-top: 10px;
+    outline: none;
+    border-radius: 16px;
+    border: solid #E55604;
+    padding: 10px;
+}
+
+#squareSide:focus{
+    border: solid orange;
+}
+
+button{
+    margin-top: 10px;
+    outline: none;
+    background-color: #26577C;
+    color: white;
+    border-radius: 8px;
+    border: solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aqua;
+    color: black;
+}
+button:active{
+    background-color: black;
+    color: white;
+    transform: translateY(2px);
+}
