@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
 }
 
 header{
@@ -7,18 +13,20 @@ header{
 }
 
 header h1{
+    margin: 0;
+    padding: 20px 0px;
     color:#EBE4D1;
     background-color: #E55604;
 }
 
-header h4{
+header h2{
     margin-top: 32px;
     color: #E55604;
 }
 
-header p{
+.penjelasan{
     margin-top: 0px;
-    font-size: x-small;
+    font-size: medium;
     color: #26577C;
 }
 
@@ -26,10 +34,14 @@ header p{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 #squareSide{
     margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
     outline: none;
     border-radius: 16px;
     border: solid #E55604;
@@ -38,6 +50,23 @@ header p{
 
 #squareSide:focus{
     border: solid orange;
+}
+
+#lblluas{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#lblkeliling{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+ 
+}
+
+.buttons{
+    text-align: center;
 }
 
 button{
@@ -49,6 +78,7 @@ button{
     border: solid black;
     padding: 10px 20px;
     cursor: pointer;
+    align-self: center;
 }
 
 button:hover{
@@ -58,5 +88,6 @@ button:hover{
 button:active{
     background-color: black;
     color: white;
-    transform: translateY(10px);
+    transform: translateY(4px);
 }
+
