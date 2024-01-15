@@ -9,12 +9,18 @@
 <body>
     <header>
         <h1>Kalkulator Luas dan Keliling Persegi</h1>
-        <h2>Welcome to Kalkulator Luas dan Persegi</h2>
+        <h2>Selamat Datang di Kalkulator Luas dan Keliling Persegi</h2>
         <p class="penjelasan">Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan mini project RevoU</p>
     </header>
 
     <div class="inputSection">
         <label for="squareSide" id="lblluas">Hitung Luas Persegi</label>
+        <img src="assets/persegi.jpg">
+        <p>Rumus Luas Persegi adalah : <strong>L = s x s</strong></p>
+            
+        <pre class="penjelasan1">Keterangan   : L = Luas persegi
+               s = sisi persegi 
+        </pre> 
         <input type="number" id="squareSide">
     </div>
     <div class="buttons">
@@ -24,9 +30,15 @@
 
     <div class="inputSection">
         <label for="squareSide" id="lblkeliling">Hitung Keliling Persegi</label>
+        <img src="assets/persegi.jpg">
+        <p>Rumus Keliling Persegi adalah : <strong>K = s x 4</strong></p>
+            
+        <pre class="penjelasan1">Keterangan   : K = Keliling persegi
+               s = sisi persegi 
+        </pre> 
         <input type="number" id="squareSide">
     </div>
-    <div class="buttons">
+    <div class="buttons" id="buttonBawah">
         <button id="hitungkeliling">Hitung</button>
         <button id="resetkeliling">Reset</button>
     </div>
