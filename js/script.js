@@ -1,63 +1,50 @@
-
-var calcDisplay = ""
+var calcDisplay1 = ""
+var calcDisplay2 = ""
 
 function btnClick(e){
-    if (e == "1" || e == "2" || e == "3" || e == "4" || e == "5" || e == "6" || e == "7" || e == "8" || e == "9" || e == "0"
-    || e == "/" || e == "+" || e == "-" || e == "*" || e == "Reset" || e == "Reset Keliling"){
-        if(e == "Reset" || e == "Reset Keliling"){
-            calcDisplay = ""
-        }else{
-        calcDisplay = calcDisplay + e
-        console.log(calcDisplay)
+    if (e == "Reset" || e == "Reset Keliling"){
+        if(e == "Reset" ){
+            calcDisplay1 = ""
+            document.getElementById("result").innerHTML = ""
         }
-        document.getElementById("luas").value = calcDisplay
-        document.getElementById("keliling").value = calcDisplay
+        else if (e == "Reset Keliling"){
+            calcDisplay2 = ""
+            document.getElementById("result1").innerHTML = ""
+        } 
+        else{
+        calcDisplay1 = calcDisplay1 + e
+        calcDisplay2 = calcDisplay2 + e
+        console.log(calcDisplay1)
+        console.log(calcDisplay2)
+        }
+        document.getElementById("luas").value = calcDisplay1
+        document.getElementById("keliling").value = calcDisplay2
     } else {
         alert('input harus berupa angka dan simbol')
     }
 }
 
-// document.getElementById("luas").addEventListener('input', function displayChange() {
-//     console.log(this.value)
-//     let e = this.value
+function hitungLuas() {
+    // Ambil nilai sisi dari input
+    var sisi = document.getElementById("luas").value;
 
-// let chars = /^[0-9]+$/
+    // Hitung luas persegi
+    var luas = sisi * sisi;
 
-//     if (chars.test(e)) {
-//         console.log("digits")
-//     } else {
-//         calcDisplay = ""
-//         alert("not digits")
-//     }
-// })
+    // Tampilkan hasil di dalam elemen dengan id "result"
+    document.getElementById("result").innerHTML = "Luas Persegi: " + luas;
+}
 
-// function btnClick(e){
-//     if (e == "1" || e == "2" || e == "3" || e == "4" || e == "5" || e == "6" || e == "7" || e == "8" || e == "9" || e == "0"
-//     || e == "/" || e == "+" || e == "-" || e == "*" || e == "Reset Keliling"){
-//         if(e == "Reset Keliling"){
-//             calcDisplay = ""
-//         }else{
-//         calcDisplay = calcDisplay + e
-//         console.log(calcDisplay)
-//         }
-//         document.getElementById("keliling").value = calcDisplay 
-//     } else {
-//         alert('input harus berupa angka dan simbol')
-//     }
-// }
+function hitungKeliling() {
+    // Ambil nilai sisi dari input
+    var sisi1 = document.getElementById("keliling").value;
 
-// document.getElementById("keliling").addEventListener('input', function displayChange() {
-//     console.log(this.value)
-//     let e = this.value
+    // Hitung luas persegi
+    var keliling = sisi1 * 4;
 
-// let chars = /^[0-9]+$/
-
-//     if (chars.test(e)) {
-//         console.log("digits")
-//     } else {
-//         alert("not digits")
-//     }
-// })
+    // Tampilkan hasil di dalam elemen dengan id "result"
+    document.getElementById("result1").innerHTML = "Keliling Persegi: " + keliling;
+}
 
 const inputField1 = document.getElementById("luas")
 const inputField2 = document.getElementById("keliling")
@@ -87,3 +74,4 @@ function validateInput(input){
     const integerRegex = /^-?\d+$/;
     return integerRegex.test(input)
 }
+

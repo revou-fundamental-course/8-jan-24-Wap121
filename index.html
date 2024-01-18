@@ -13,33 +13,33 @@
         <p class="penjelasan">Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan mini project RevoU</p>
     </header>
 
-    <div class="inputSection">
+    <div class="inputSection" id="persegiLuas">
         <label for="luas" id="lblluas">Hitung Luas Persegi</label>
         <img class="persegi" src="assets/persegi.jpg">
         <p>Rumus Luas Persegi adalah : <strong>L = s x s</strong></p>
             
-        <pre class="penjelasan1">Keterangan   : L = Luas persegi
-               s = sisi persegi 
-        </pre> 
+        <p class="penjelasan1">Keterangan   : L = Luas persegi, s = sisi persegi 
+        </p> 
         <input type="number" id="luas">
+        <div class="result" id="result"></div>
     </div>
     <div class="buttons">
-        <button onClick="" id="hitungluas">Hitung</button>
+        <button onClick="hitungLuas()" id="hitungluas">Hitung</button>
         <button onClick="btnClick(this.innerText)" id="reset1">Reset</button>
     </div>
 
-    <div class="inputSection">
+    <div class="inputSection" id="persegiKeliling">
         <label for="keliling" id="lblkeliling">Hitung Keliling Persegi</label>
         <img class="persegi" src="assets/persegi.jpg">
         <p>Rumus Keliling Persegi adalah : <strong>K = s x 4</strong></p>
             
-        <pre class="penjelasan1">Keterangan   : K = Keliling persegi
-               s = sisi persegi 
-        </pre> 
+        <p class="penjelasan1">Keterangan   : K = Keliling persegi, s = sisi persegi 
+        </p> 
         <input type="number" id="keliling">
+        <div class="result" id="result1"></div>
     </div>
     <div class="buttons" id="buttonBawah">
-        <button id="hitungkeliling">Hitung</button>
+        <button onClick="hitungKeliling()" id="hitungkeliling">Hitung</button>
         <button onClick="btnClick(this.innerText)" id="reset2">Reset Keliling</button>
     </div>
     <script src="js/script.js"></script>

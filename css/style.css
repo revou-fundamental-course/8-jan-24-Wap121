@@ -69,6 +69,12 @@ header h2{
  
 }
 
+.result{
+    margin-top: 5px;
+    padding: 10px;
+    border: solid #E55604;
+    border-radius: 16px;
+}
 .buttons{
     text-align: center;
 }
