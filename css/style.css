@@ -42,7 +42,7 @@ header h2{
     align-items: center;
 }
 
-#squareSide{
+#luas, #keliling{
     margin-top: 10px;
     width: 100%;
     max-width: 800px;
@@ -93,6 +93,20 @@ button:active{
     background-color: black;
     color: white;
     transform: translateY(4px);
+}
+button:disabled{
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.persegi{
+    width:25%;
+    float: left; 
+    margin-bottom: 10px;
+    margin-right: 0%;
+    height:auto;
 }
 
 #buttonBawah{
