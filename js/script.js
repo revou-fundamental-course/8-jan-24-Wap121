@@ -39,10 +39,10 @@ function hitungKeliling() {
     // Ambil nilai sisi dari input
     var sisi1 = document.getElementById("keliling").value;
 
-    // Hitung luas persegi
+    // Hitung keliling persegi
     var keliling = sisi1 * 4;
 
-    // Tampilkan hasil di dalam elemen dengan id "result"
+    // Tampilkan hasil di dalam elemen dengan id "result1"
     document.getElementById("result1").innerHTML = "Keliling Persegi: " + keliling;
 }
 
